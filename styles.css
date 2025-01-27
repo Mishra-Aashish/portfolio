@@ -1,0 +1,486 @@
+/* Resetting some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding-top: 80px;
+}
+
+header {
+  background-color: #021c39;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Make the navbar fixed */
+  width: 100%; /* Occupy full width */
+  top: 0; /* Place it at the top */
+  z-index: 999; /* Ensure it's above other content */
+}
+header h1{
+  background: linear-gradient(135deg,red, green, gold, white,blue,grey); /* Adjust the percentages to control the color blend */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+nav a:hover{
+  color: lightgoldenrodyellow;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+#home {
+  background-image: url('./image/bgbgbg.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Ensuring text is visible on the background */
+  text-align: center;
+  padding: 100px 20px; /* Adjust padding to your preference */
+  padding: 100px 20px; /* Adjust padding to your preference */
+  height: 100vh; /* Set the height to fill the entire viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.intro h2 {
+  /* Styles for text content in the home section */
+  /* For example: */
+  font-size: 55px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:#d01313;
+}
+.intro p{
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 20px;
+  
+}
+
+
+#about{
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 80px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background:radial-gradient(white,#e7eff7,#abcbf0);
+}
+
+.main-box {
+  position: relative;
+  top: -10px;
+  border:none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Adjust width as needed */
+  height: 400px;
+  background:radial-gradient(white,#e7eff7,#abcbf0);
+}
+
+.img-box {
+  width: 320px; /* Adjust width as needed */
+  height: 380px; /* Set height as needed */
+  margin-left: 90px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0px 25px 40px 1px black;
+  
+}
+
+.img-box img{
+  width: 99.9%; /* Adjust width as needed */
+  height: 99.9%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px 0px white; 
+}
+
+.detail-box{
+  width: 650px; /* Adjust width as needed */
+  height: 350px; /* Set height as needed */
+  margin-right: 80px;
+  margin-top: 20px;
+}
+
+/* Additional styles for the download button */
+.download-button {
+  border: none;
+  width: 200px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background:#1e3551;
+  cursor: pointer;
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease; 
+  box-shadow:   2px 5px 5px 0px  black;
+}
+
+.download-button:hover {
+  border: 2px solid #1e3551;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #30445b; 
+  font-size: 20px;
+  text-shadow:  2px 2px 2px #30445b; 
+  box-shadow:  2px 2px  black;
+}
+
+#projects{
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: -10px;
+  padding: 80px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background:radial-gradient(white,#e7eff7,#abcbf0);
+}
+
+.projects {
+  position: relative;
+  background:radial-gradient(white,#e7eff7,#abcbf0);
+  text-align: center;
+  display:flex;
+  margin-top:-10px;
+  border: none;
+  gap: -5px;
+  margin-bottom: 10px;
+  height: 420px;
+  width: 100%;
+  
+}
+
+.project {
+  margin-top: 40px;
+  margin-left: 14px;
+  margin-right: 15px;
+  height: 340px;
+  width: 290px;
+  border:none;
+  border-radius: 10px;
+  transition: transform 1s ease-in-out;
+  /* box-shadow: 2px 5px 5px 0px  black; */
+  box-shadow: 0px 25px 40px 1px black;
+  /* box-shadow: 0px 25px 40px 1px rgb(0, 0, 0); */
+  object-fit: cover;
+}
+.project h3{
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.project:hover{
+  transform: scale(1.1);
+  border: none;
+  background: url(./image/pngtree-business-cream-reforestation-project-proposal-image_723246.jpg);
+  
+}
+.project img{
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 2px;
+  width: 60%;
+  height: 240px;
+ 
+  object-fit:fill;
+  box-shadow: 1px 5px 5px 0px  black;
+  
+  transition: transform 1s ease-in-out;
+}
+
+.project img:hover{
+  transform: scale(0.9);
+  /* width: 60%;
+  height: 240px; */
+  box-shadow: 0px 25px 40px 1px black;
+}
+
+#contact{
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: -10px;
+  padding: 80px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background:radial-gradient(white,#e7eff7,#c4daf4);
+}
+
+.contact{
+  display: flex;
+  border:none;
+  height: 600px;
+  width: 100%;
+  background:radial-gradient(white,#e7eff7,#abcbf0);
+  margin-top: -10px;
+}
+.contact-box{
+  margin-top: 10px;
+  margin-left: 50px;
+  border:none;
+  height: 500px;
+  width: 560px;
+  padding-left: 50px;
+}
+
+.contact-box1{
+  margin-top: 120px;
+  margin-left: 70px;
+  height: 40px;
+  width: 135px;
+}
+.fields{
+  display: flex;
+  gap: 10px;
+  margin-top: 170px;
+  margin-left: -120px;
+}
+
+.message ,.subject{
+  margin-top: 20px; 
+  margin-left: -120px;
+}
+
+.contact-button{
+  margin-top: 20px;
+  margin-left: -120px;
+  height: 42px; 
+  width: 175px !important;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: #1e3551;
+  box-shadow: 1px 2px 2px 1px black;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover{
+  border: 2px solid #1e3551;
+  background:white;
+  color: #1e3551;
+  font-weight: bolder;
+}
+
+.user-info,
+.address-info,
+.email-info,
+.language-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.user-info i,
+.address-info i,
+.email-info i,
+.language-info i{
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.user-details,
+.address-details,
+.email-details,
+.language-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-details p,h3,
+.address-details p,h3,
+.email-details p,h3,
+.language-details p,h3{
+  margin: 5px 0;
+  margin-top: 5px;
+  margin-left: 17px;
+  line-height: 14px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content:flex-start;
+  margin-left: 290px;
+  margin-top: 70px;
+  transition: transform 1s ease-out;
+}
+
+
+.social-icons a {
+  margin: 0 20px;
+  font-size: 30px;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Adjust the hover color as needed */
+  transform: scale(1.2)
+}
+
+.footer{
+  
+  box-shadow: 0px 2px 5px 4px black;
+  height: 50px;
+  width: 100%;
+  background: #021c39;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(171, 168, 168);
+  font-size: 17px;
+ 
+}
+
+.footer h3:hover{
+  color: red;
+  text-decoration: underline;
+}
+
+.footer i{
+  transition: transform 1s ease-in-out;
+}
+.footer i:hover{
+  color: rgb(4, 71, 4);
+}
+
+/* Your existing CSS */
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  /* Header styles */
+  header {
+      padding: 10px;
+  }
+
+  /* Navigation styles */
+  nav ul li {
+      margin-right: 10px;
+  }
+
+  /* Home Section */
+  #home {
+      padding: 80px 20px;
+  }
+
+  .intro h2 {
+      font-size: 40px;
+  }
+
+  .intro p {
+      font-size: 20px;
+      margin-top: 10px;
+  }
+
+  /* About Section */
+  #about {
+      font-size: 30px;
+      padding: 50px;
+  }
+
+  .main-box {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .img-box {
+      width: 80%;
+      margin: 20px auto;
+  }
+
+  .detail-box {
+      width: 90%;
+      margin: 20px auto;
+  }
+
+  /* Projects Section */
+  #projects {
+      font-size: 30px;
+      padding: 50px;
+  }
+
+  .projects {
+      flex-direction: column;
+      margin-top: 0;
+  }
+
+  .project {
+      width: 80%;
+      margin: 20px auto;
+  }
+
+  /* Contact Section */
+  #contact {
+      font-size: 30px;
+      padding: 50px;
+  }
+
+  .contact {
+      flex-direction: column;
+      margin-top: 0;
+  }
+
+  .contact-box {
+      margin-left: 0;
+      width: 100%;
+      padding-left: 20px;
+  }
+
+  .contact-box1 {
+      margin-left: 0;
+      width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+      font-size: 15px;
+      justify-content: space-between;
+  }
+
+  .footer p {
+      display: none;
+  }
+}
